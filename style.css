@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.flower1 {
+    position: relative;
+    display: inline-block;
+    flex: none;
+}
+
+.flower1 .static {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+  
+.flower1:hover .static {
+    display: inline-block;
+}
+
+.flowerbee {
+    position: relative;
+    display: inline-block;
+    flex: none;
+}
+
+.flowerbee .static {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+  
+.flowerbee:hover .static {
+    display: inline-block;
+}
+
+.flowerbee:hover + .bigtext {
+    display: flex;
+    top: 0;
+    text-align: center;
+}
+
+.bigtext {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5vw;
+    margin-left: 30vw;
+    display: none;
+    position: absolute;
+}
+
+.box {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flowers {
+    display: flex;
+}
+
+.field {
+    background-image:url('https://www.dropbox.com/scl/fi/38ewwuewipwh0x12jps2x/flowerfield.jpg?rlkey=u7ggznla1qupozvnws9pcq3tl&st=kkszx72o&raw=1');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: flex-end;
+}
+
+@media (min-width: 900px) {
+    .flower1 {
+       overflow-x: visible;
+    }
+  
+    .flower1 > div {
+      flex-basis: 0;
+      flex-grow: 1;
+     }
+}
