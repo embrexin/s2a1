@@ -3,7 +3,9 @@
 .flower1 {
     position: relative;
     display: inline-block;
-    flex: none;
+    width: 25%;
+    min-width: 200px;
+    flex-shrink: 0;
 }
 
 .flower1 .static {
@@ -21,7 +23,9 @@
 .flowerbee {
     position: relative;
     display: inline-block;
-    flex: none;
+    width: 25%;
+    min-width: 200px;
+    flex-shrink: 0;
 }
 
 .flowerbee .static {
@@ -53,19 +57,15 @@
     position: absolute;
 }
 
-.box {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .flowers {
     display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .field {
-    background-image:url('https://www.dropbox.com/scl/fi/38ewwuewipwh0x12jps2x/flowerfield.jpg?rlkey=u7ggznla1qupozvnws9pcq3tl&st=kkszx72o&raw=1');
+    background-image:url('https://www.dropbox.com/scl/fi/07wxe69jprvl6hq7c4and/flowerfield.jpg?rlkey=bqgueibw7lmbjwdlvh1f0lfx7&st=kulqwnxh&raw=1');
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
