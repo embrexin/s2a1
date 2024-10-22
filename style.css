@@ -50,7 +50,6 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    text-align: center;
     margin: 5vw;
     margin-left: 30vw;
     display: none;
@@ -63,15 +62,16 @@
     justify-content: space-between;
     flex-shrink: 0;
     width: 100%;
+    margin: 0;
 }
 
 .field {
-    background-image:url('https://www.dropbox.com/scl/fi/07wxe69jprvl6hq7c4and/flowerfield.jpg?rlkey=bqgueibw7lmbjwdlvh1f0lfx7&st=kulqwnxh&raw=1');
-    background-attachment:fixed;
+    background-image: url('https://www.dropbox.com/scl/fi/07wxe69jprvl6hq7c4and/flowerfield.jpg?rlkey=bqgueibw7lmbjwdlvh1f0lfx7&st=kulqwnxh&raw=1');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     align-items: flex-end;
 }
@@ -85,6 +85,15 @@
       flex-basis: 0;
       flex-grow: 1;
      }
+
+     .flowerbee {
+        overflow-x: visible;
+     }
+   
+     .flowerbee > div {
+       flex-basis: 0;
+       flex-grow: 1;
+      }
 }
 
 @media (max-width: 600px) {
